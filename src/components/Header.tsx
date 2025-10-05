@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from './LanguageToggle';
 import { useState } from 'react';
+import teinnoLogo from '../assets/teinno-logo.png';
 
 const Header = () => {
   const { t } = useLanguage();
@@ -30,18 +31,11 @@ const Header = () => {
               className="flex items-center gap-2"
             >
               <img 
-                src="/teinno-logo.png" 
+                src={teinnoLogo} 
                 alt="Teinno AS Logo" 
                 className="h-8 w-auto"
-                onError={(e) => {
-                  console.log('Logo failed to load, using fallback');
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'block';
-                }}
+                onError={() => console.log('Logo failed to load:', teinnoLogo)}
               />
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center" style={{display: 'none'}}>
-                <span className="text-white font-bold text-xl">T</span>
-              </div>
               <div className="flex flex-col">
               </div>
             </motion.div>

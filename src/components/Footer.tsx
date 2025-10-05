@@ -1,3 +1,5 @@
+import teinnoLogoWhite from '../assets/teinno-logo-white.png';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white mt-auto">
@@ -7,16 +9,11 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-3">
               <img 
-                src="/teinno-logo-white.png" 
+                src={teinnoLogoWhite} 
                 alt="Teinno AS Logo" 
                 className="h-6 w-auto"
-                onError={(e) => {
-                  console.log('White logo failed to load, using fallback');
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'block';
-                }}
+                onError={() => console.log('White logo failed to load:', teinnoLogoWhite)}
               />
-              <h3 className="text-xl font-bold text-white" style={{display: 'none'}}>TEINNO AS</h3>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Building bridges between Nordic innovation and Latin American markets since 2018
