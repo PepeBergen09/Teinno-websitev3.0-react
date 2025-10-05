@@ -24,16 +24,23 @@ const Header = () => {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center"
+              className="flex items-center gap-2"
             >
-              <span className="text-white font-bold text-xl">B2B</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">T</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold leading-none" style={{color: '#1e40af'}}>
+                  TEINNO
+                </span>
+                <span className="text-xs text-gray-500 hidden sm:block leading-none mt-0.5">
+                  Nordic-LATAM Bridge
+                </span>
+              </div>
             </motion.div>
-            <span className="text-xl font-bold text-neutral-dark hidden sm:block">
-              Consulting
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
