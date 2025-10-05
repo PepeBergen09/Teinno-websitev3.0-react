@@ -274,7 +274,7 @@ const About = () => {
         </motion.div>
 
         {/* Founder Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -323,7 +323,7 @@ const About = () => {
               <a href="https://www.linkedin.com/company/teinno" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-2">LinkedIn</a>
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Why Choose Teinno */}
         <div className="mb-16">
