@@ -31,7 +31,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>Bergen, Norway</li>
               <li>Querétaro, Mexico</li>
-              <li><a href="mailto:pepe.martinez@teinno.no" className="hover:text-white transition-colors">pepe.martinez@teinno.no</a></li>
+              <li><a href="mailto:contact@teinno.no" className="hover:text-white transition-colors">contact@teinno.no</a></li>
               <li className="pt-2">
                 <a
                   href="https://www.linkedin.com/company/teinno"

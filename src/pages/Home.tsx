@@ -177,27 +177,9 @@ const Home = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               {t.home.hero.title}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 p-6">
               {t.home.hero.subtitle}
             </p>
-            
-            {/* Trust Badges */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              {[c.trustBadge1, c.trustBadge2, c.trustBadge3].map((badge, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1 }}
-                  className="flex items-center gap-2 text-sm bg-white bg-opacity-10 backdrop-blur rounded-lg p-3"
-                >
-                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                  </svg>
-                  <span>{badge}</span>
-                </motion.div>
-              ))}
-            </div>
 
             <div className="flex flex-wrap gap-4">
               <a href="https://calendly.com/pepe-martinez-teinno" target="_blank" rel="noopener noreferrer">
@@ -392,11 +374,8 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{c.finalCta.title}</h2>
-            <p className="text-xl mb-6 text-blue-100">{c.finalCta.text}</p>
-            <div className="inline-block bg-white bg-opacity-20 backdrop-blur px-4 py-2 rounded-full text-sm font-semibold mb-8">
-              {c.finalCta.badge}
-            </div>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <p className="text-xl p-6 mb-6 text-blue-100">{c.finalCta.text}</p>
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
               <a href="https://calendly.com/pepe-martinez-teinno" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}

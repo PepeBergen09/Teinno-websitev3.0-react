@@ -491,10 +491,7 @@ const Services = () => {
           className="text-center bg-gradient-to-br from-primary to-primary-800 text-white rounded-lg p-12"
         >
           <h2 className="text-3xl font-bold mb-4">{c.cta.title}</h2>
-          <p className="text-xl mb-6 text-blue-100 max-w-3xl mx-auto">{c.cta.text}</p>
-          <div className="inline-block bg-white bg-opacity-20 backdrop-blur px-4 py-2 rounded-full text-sm font-semibold mb-8">
-            {c.cta.trust}
-          </div>
+          <p className="text-xl p-6 mb-6 text-blue-100 max-w-3xl mx-auto">{c.cta.text}</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="https://calendly.com/pepe-martinez-teinno" target="_blank" rel="noopener noreferrer">
               <motion.button
