@@ -30,10 +30,16 @@
   html {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   
   body {
     @apply bg-white text-gray-800 antialiased;
+  }
+  
+  /* Ensure pages start from top */
+  main {
+    position: relative;
   }
 }
 

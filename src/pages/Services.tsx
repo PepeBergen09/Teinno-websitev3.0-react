@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
+import PageWrapper from '../components/PageWrapper';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -371,7 +372,7 @@ const Services = () => {
   const c = content[language];
 
   return (
-    <div className="py-16">
+    <PageWrapper className="pt-8 pb-16">
       <div className="container-custom">
         {/* Hero */}
         <motion.div
@@ -393,9 +394,8 @@ const Services = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               className={`relative bg-white rounded-lg shadow-lg overflow-hidden flex flex-col ${
                 index === 1 ? 'ring-2 ring-primary transform lg:scale-105' : ''
               }`}
@@ -514,7 +514,7 @@ const Services = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

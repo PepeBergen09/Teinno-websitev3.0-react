@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { useLanguage } from '../contexts/LanguageContext';
+import PageWrapper from '../components/PageWrapper';
 
 interface ContactFormData {
   name: string;
@@ -174,7 +175,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-16">
+    <PageWrapper className="pt-8 pb-16">
       <div className="container-custom">
         {/* Hero */}
         <motion.div
@@ -362,8 +363,8 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
             className="bg-white rounded-lg shadow-lg p-8"
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-6">{c.contactInfo.title}</h2>
@@ -445,7 +446,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

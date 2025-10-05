@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
+import PageWrapper from '../components/PageWrapper';
 
 const Projects = () => {
   const { language } = useLanguage();
@@ -398,7 +399,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="py-16">
+    <PageWrapper className="pt-8 pb-16">
       <div className="container-custom">
         {/* Hero */}
         <motion.div
@@ -420,9 +421,8 @@ const Projects = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
               <div className="p-8">
@@ -555,7 +555,7 @@ const Projects = () => {
           </a>
         </motion.div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

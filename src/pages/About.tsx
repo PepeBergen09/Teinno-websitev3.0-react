@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
+import PageWrapper from '../components/PageWrapper';
 
 const About = () => {
   const { language } = useLanguage();
@@ -256,7 +257,7 @@ const About = () => {
   const c = content[language];
 
   return (
-    <div className="py-16">
+    <PageWrapper className="pt-8 pb-16">
       <div className="container-custom">
         {/* Hero */}
         <motion.div
@@ -275,8 +276,8 @@ const About = () => {
         {/* Founder Section */}
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
           className="mb-16 bg-white rounded-lg shadow-lg p-8 md:p-12"
         >
           <div className="mb-6">
@@ -426,7 +427,7 @@ const About = () => {
           </a>
         </motion.div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 
