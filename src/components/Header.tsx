@@ -29,16 +29,20 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+              <img 
+                src="/teinno-logo.png" 
+                alt="Teinno AS Logo" 
+                className="h-8 w-auto"
+                onError={(e) => {
+                  console.log('Logo failed to load, using fallback');
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling.style.display = 'block';
+                }}
+              />
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center" style={{display: 'none'}}>
                 <span className="text-white font-bold text-xl">T</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold leading-none" style={{color: '#1e40af'}}>
-                  TEINNO
-                </span>
-                <span className="text-xs text-gray-500 hidden sm:block leading-none mt-0.5">
-                  Nordic-LATAM Bridge
-                </span>
               </div>
             </motion.div>
           </Link>
