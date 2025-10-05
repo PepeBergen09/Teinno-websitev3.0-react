@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  /* Custom Colors - Tailwind v4 theme format */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1e40af;
+  --color-primary-800: #1e3a8a;
+  --color-primary-900: #1e3a8a;
+  --color-primary: #1e40af;
+  
+  --color-secondary-light: #60a5fa;
+  --color-secondary: #3b82f6;
+  --color-secondary-dark: #2563eb;
+  
+  --color-neutral-light: #f9fafb;
+  --color-neutral-medium: #6b7280;
+  --color-neutral-dark: #1f2937;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
+    @apply bg-white text-gray-800 antialiased;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-secondary);
+    @apply text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-secondary-dark);
+  }
+  
+  .btn-secondary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    @apply bg-white font-medium py-2 px-6 rounded-lg transition-colors duration-200 border-2;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--color-neutral-light);
+  }
+}
