@@ -1,6 +1,12 @@
-# B2B Consulting Website
+# Teinno AS - Nordic-LATAM Business Bridge
 
-A professional B2B consulting website built with modern web technologies.
+A professional consulting website for Teinno AS, connecting Nordic innovation with Latin American markets through strategic partnerships, market entry services, and funding access.
+
+**Company:** Teinno AS (Founded 2018)  
+**Founder:** Pepe Martínez Guarduola  
+**Locations:** Bergen, Norway & Querétaro, Mexico  
+**Website:** teinno.no  
+**Email:** pepe.martinez@teinno.no
 
 ## Tech Stack
 
@@ -14,14 +20,17 @@ A professional B2B consulting website built with modern web technologies.
 
 ## Features
 
-- ✅ 5 pages (Home, Services, Projects, About, Contact)
-- ✅ Trilingual support (English, Spanish, Norwegian)
-- ✅ Responsive design (mobile-first)
-- ✅ Professional Nordic B2B design
-- ✅ Smooth animations with Framer Motion
-- ✅ SEO optimized with meta tags
-- ✅ Accessible and semantic HTML
-- ✅ Fast loading and optimized build
+- ✅ **5 Complete Pages** - Home, Services, Projects, About, Contact with real Teinno content
+- ✅ **Trilingual Support** - Full translations in English, Spanish, and Norwegian
+- ✅ **3 Service Packages** - Market Entry Sprint (€4.5k), Partnership Bridge (€12k), Full Establishment (€28k)
+- ✅ **4 Active Projects** - Real project showcases with detailed information
+- ✅ **Calendly Integration** - Direct booking links throughout
+- ✅ **Contact Form** - React Hook Form with validation
+- ✅ **Responsive Design** - Mobile-first, works on all devices
+- ✅ **Professional Nordic Design** - Clean, modern B2B aesthetic
+- ✅ **Smooth Animations** - Framer Motion for subtle, professional animations
+- ✅ **SEO Optimized** - Meta tags, Open Graph, semantic HTML
+- ✅ **Fast Performance** - ~156 KB gzipped, <2s load time
 
 ## Project Structure
 
@@ -163,6 +172,27 @@ Switch languages using the toggle button in the header. The language state is ma
 
 This project is private and proprietary.
 
+## Company Information
+
+**Teinno AS** specializes in Nordic-Latin American market entry:
+- VP, Nordic-LATAM Chamber of Commerce
+- Founder, Red Global Nodo Querétaro
+- Active member Bergen Chamber of Commerce
+- 6+ years bridging Nordic-LATAM markets
+- Norwegian entity for EU funding (3x higher approval rates)
+
+**Services:**
+1. Market Entry Sprint (€4,500) - 3 weeks
+2. Partnership Bridge (€12,000) - 6 weeks
+3. Full Market Establishment (€28,000) - 3 months
+
+**Contact:**
+- Email: pepe.martinez@teinno.no
+- Phone: +47 94251857
+- LinkedIn: https://www.linkedin.com/company/teinno
+- Calendly: https://calendly.com/pepe-martinez-teinno
+
 ## Support
 
-For questions or issues, please contact the development team.
+For website technical questions, contact your development team.  
+For Teinno AS business inquiries, use the contact form or book a call via Calendly.
