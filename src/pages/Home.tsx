@@ -166,8 +166,9 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary-800 text-white">
-        <div className="container-custom py-20 md:py-32">
+      <section className="bg-gradient-to-br from-primary to-primary-800 text-white relative" style={{ backgroundImage: 'url(/santa-fe.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary-800/80"></div>
+        <div className="container-custom py-20 md:py-32 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
