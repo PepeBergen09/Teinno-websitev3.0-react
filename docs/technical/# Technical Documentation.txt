@@ -1,0 +1,30 @@
+# Technical Documentation
+
+## Overview
+Technical documentation for Teinno Website v3.0 React application.
+
+## Contents
+
+1. [Architecture Overview](./architecture.md)
+2. [Development Setup](./development-setup.md)
+3. [API Documentation](./api-documentation.md)
+4. [Database Schema](./database-schema.md)
+5. [Security Guidelines](./security.md)
+6. [Performance Optimization](./performance.md)
+7. [Troubleshooting](./troubleshooting.md)
+
+## Technology Stack
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: CSS Modules, Responsive Design
+- **State Management**: React Context API
+- **Internationalization**: Custom i18n implementation
+- **Build Tool**: Vite
+- **Package Manager**: npm
+- **Deployment**: Plesk with Node.js
+
+## Quick Links
+
+- [Installation Guide](./development-setup.md#installation)
+- [Build Process](./development-setup.md#build-process)
+- [Environment Configuration](./development-setup.md#environment-setup)

@@ -1,0 +1,109 @@
+# End Users Documentation
+
+## User Guide for Teinno Website
+
+Welcome to the comprehensive user guide for the Teinno Website v3.0. This documentation will help you navigate and make the most of our website features.
+
+## Contents
+
+1. [Getting Started](./getting-started.md)
+2. [Navigation Guide](./navigation.md)
+3. [Language Settings](./language-settings.md)
+4. [Contact Information](./contact.md)
+5. [Services Overview](./services.md)
+6. [Frequently Asked Questions](./faq.md)
+7. [Troubleshooting](./troubleshooting.md)
+
+## Quick Start Guide
+
+### Accessing the Website
+1. Open your web browser
+2. Navigate to the Teinno website URL
+3. The homepage will load automatically
+
+### Key Features
+- **Multilingual Support**: Switch between Spanish and English
+- **Responsive Design**: Works on all devices
+- **Fast Loading**: Optimized for speed
+- **Easy Navigation**: Intuitive menu structure
+
+## Website Sections
+
+### Home Page
+- Company overview
+- Key services highlight
+- Contact information
+- Language selector
+
+### Services
+- Detailed service descriptions
+- Case studies and examples
+- Process explanations
+- Contact forms for inquiries
+
+### About Us
+- Company history and mission
+- Team information
+- Values and approach
+- Success stories
+
+### Contact
+- Multiple contact methods
+- Office locations
+- Contact forms
+- Response time expectations
+
+## Language Settings
+
+### Switching Languages
+1. Look for the language selector (usually in the top menu)
+2. Click on your preferred language (ES/EN)
+3. The entire website content will update
+4. Your language preference is remembered
+
+### Available Languages
+- **Spanish (ES)**: Default language
+- **English (EN)**: Full translation available
+
+## Mobile Experience
+
+### Mobile Features
+- **Touch-Friendly**: Easy navigation on mobile devices
+- **Responsive Layout**: Adapts to screen size
+- **Fast Loading**: Optimized for mobile networks
+- **Readable Text**: Proper font sizing
+
+### Mobile Navigation
+- Hamburger menu for easy access
+- Swipe gestures supported
+- Large touch targets
+- Simplified layout
+
+## Accessibility Features
+
+### Keyboard Navigation
+- Tab through all interactive elements
+- Enter key activates buttons and links
+- Escape key closes modals and dropdowns
+
+### Screen Reader Support
+- Proper heading structure
+- Alt text for images
+- ARIA labels for complex elements
+- High contrast text
+
+## Getting Help
+
+### Contact Support
+- **Email**: [support email]
+- **Phone**: [support phone]
+- **Response Time**: 24-48 hours
+- **Languages**: Spanish and English
+
+### Common Issues
+- Page loading problems
+- Language switching issues
+- Contact form difficulties
+- Mobile display problems
+
+For detailed troubleshooting, see the [Troubleshooting Guide](./troubleshooting.md).
