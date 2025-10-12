@@ -69,6 +69,77 @@ A professional consulting website for Teinno AS, connecting Nordic innovation wi
 npm install
 \`\`\`
 
+### Environment Configuration
+
+This project supports multiple environments (development, test, production) with different configuration options.
+
+#### Environment Files
+
+- `.env.development` - Development environment variables
+- `.env.test` - Test environment variables  
+- `.env.production` - Production environment variables
+- `.env.example` - Template file with all available variables
+
+#### Setup Environment
+
+1. Copy the example file for your environment:
+\`\`\`bash
+# For development
+cp .env.example .env.development
+
+# For production  
+cp .env.example .env.production
+\`\`\`
+
+2. Update the variables in your environment file:
+\`\`\`bash
+# Application settings
+VITE_APP_NAME=Teinno Website
+VITE_APP_VERSION=3.0.0
+VITE_APP_ENV=development
+VITE_APP_URL=http://localhost:5173
+
+# API configuration
+VITE_API_BASE_URL=http://localhost:3001/api
+VITE_API_TIMEOUT=10000
+
+# Feature flags
+VITE_ENABLE_ANALYTICS=false
+VITE_ENABLE_DEBUG=true
+
+# External services
+VITE_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+VITE_CONTACT_EMAIL=info@teinno.com
+\`\`\`
+
+3. Validate your environment configuration:
+\`\`\`bash
+node scripts/validate-env.js
+\`\`\`
+
+#### Available Scripts
+
+\`\`\`bash
+# Development with different environments
+npm run dev              # Development mode
+npm run dev:test         # Test mode on port 5174
+
+# Build for different environments
+npm run build            # Production build
+npm run build:test       # Test environment build
+npm run build:dev        # Development build
+
+# Preview builds
+npm run preview          # Preview production build
+npm run preview:test     # Preview test build on port 4174
+
+# Utilities
+npm run lint             # Check code quality
+npm run lint:fix         # Fix linting issues
+npm run type-check       # TypeScript validation
+npm run clean            # Clean build directory
+\`\`\`
+
 ### Development
 
 Start the development server:

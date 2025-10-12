@@ -1,7 +1,29 @@
-# Docker Compose for local testing
+# Docker Compose for local development and testing
 version: '3.8'
 
 services:
+  # Development service
+  teinno-web-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: development
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_APP_ENV=development
+    env_file:
+      - .env.development
+    command: npm run dev
+    restart: unless-stopped
+    networks:
+      - teinno-network
+
+  # Production build testing
   teinno-web:
     build:
       context: .
@@ -10,6 +32,9 @@ services:
       - "3000:80"
     environment:
       - NODE_ENV=production
+      - VITE_APP_ENV=production
+    env_file:
+      - .env.production
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost/health"]
@@ -17,3 +42,34 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    networks:
+      - teinno-network
+
+  # Test environment
+  teinno-web-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    environment:
+      - NODE_ENV=test
+      - VITE_APP_ENV=test
+    env_file:
+      - .env.test
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - teinno-network
+
+networks:
+  teinno-network:
+    driver: bridge
+
+volumes:
+  node_modules:
