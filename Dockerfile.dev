@@ -1,0 +1,39 @@
+# Development Dockerfile for hot reloading and development
+# This file is used for development environments only
+
+FROM node:18-alpine AS development
+
+# Install development tools
+RUN apk add --no-cache curl git
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm ci && npm cache clean --force
+
+# Copy source code
+COPY . .
+
+# Expose development port
+EXPOSE 5173
+
+# Create non-root user for security
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nextjs -u 1001
+
+# Change ownership of app directory
+RUN chown -R nextjs:nodejs /app
+
+# Switch to non-root user
+USER nextjs
+
+# Health check for development
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+    CMD curl -f http://localhost:5173 || exit 1
+
+# Start development server
+CMD ["npm", "run", "dev"]
